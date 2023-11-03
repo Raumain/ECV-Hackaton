@@ -529,13 +529,13 @@ main {
   margin: -80px 0 20px 0;
 }
 
-#part-4 > div > div #joining-line{
-    position: absolute;
-    top: 20px;
-    left: 7px;
-    width: 1px;
-    height: 685px;
-    background-color: red;
+#part-4 > div > div #joining-line {
+  position: absolute;
+  top: 20px;
+  left: 7px;
+  width: 1px;
+  height: 685px;
+  background-color: red;
 }
 
 #part-4 > div > div > a img {
@@ -563,4 +563,88 @@ main {
   justify-content: flex-start;
   gap: 20px;
   width: 100%;
+}
+
+@media screen and (max-width: 1323px) {
+  #above ul {
+    width: unset !important;
+  }
+
+  #landing > p > img {
+    width: 450px;
+    margin-left: -70px;
+  }
+
+  #landing > div > a {
+    font-size: 1.2rem;
+  }
+
+  .actions:nth-of-type(odd) > img {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .actions:nth-of-type(even) > img {
+    margin-left: -5px;
+    margin-right: -5px !important;
+  }
+
+  #section-separator > div {
+    margin-top: -70px;
+  }
+
+  #part-4 > div > div:first-of-type {
+    margin-top: -120px;
+  }
+  #part-4 > div > div:first-of-type > img {
+    width: 550px;
+  }
+
+  #part-4 > div > div:last-of-type {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #landing > p > img {
+    width: 400px !important;
+    margin-left: -70px;
+  }
+
+  #landing > div > a {
+    font-size: 1rem;
+  }
+
+  .actions:nth-of-type(odd) > img {
+    margin-right: -10px;
+  }
+
+  .actions:nth-of-type(even) > img {
+    margin-left: -10px;
+  }
+
+  #section-separator > div {
+    margin-top: -120px;
+  }
+
+  #line {
+    height: 680px !important;
+  }
+
+  #part-3 {
+    gap: 100px;
+  }
+
+  #part-4 > div > div:first-of-type > img {
+    width: 450px;
+  }
+
+  #part-4 > div > div:first-of-type > a {
+    margin-top: 10px;
+    font-size: .8rem;
+  }
+
+  #joining-line{
+    height: 780px !important;
+  }
 }
