@@ -641,10 +641,63 @@ main {
 
   #part-4 > div > div:first-of-type > a {
     margin-top: 10px;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
-  #joining-line{
+  #joining-line {
     height: 780px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav ul a {
+    font-size: 1rem;
+  }
+
+  #landing > p > img {
+    width: 350px !important;
+    margin-left: -70px;
+  }
+
+  #counter {
+    width: 250px;
+    height: 80px;
+  }
+
+  #counter span {
+    font-size: 1.5rem;
+  }
+
+  #counter .separator {
+    height: 60px;
+  }
+
+  #landing > div > a {
+    font-size: 0.8rem;
+  }
+
+  .actions:nth-of-type(odd) > img {
+    margin-right: -15px;
+  }
+
+  .actions:nth-of-type(even) > img {
+    margin-left: -15px;
+  }
+
+  #part-2 {
+    height: 160vh;
+  }
+
+  #section-separator > div {
+    font-size: 0.8rem;
+  }
+
+  #part-4 > div > div:first-of-type > img {
+    width: 350px;
+  }
+
+  #part-4 > div > div:first-of-type > a {
+    margin-top: 10px;
+    font-size: 0.5rem;
   }
 }
