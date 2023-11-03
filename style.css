@@ -1,0 +1,566 @@
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background: white;
+  z-index: 999;
+}
+
+header > section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0;
+}
+
+header > section#above {
+  justify-content: flex-end;
+  height: 30px;
+  padding-top: 1rem;
+  padding-right: 16.5rem;
+}
+
+header > section#above button:first-of-type {
+  font-weight: 700;
+}
+
+header > section#above button {
+  background: none;
+  border: none;
+}
+
+header > section#above > ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  width: 50%;
+  list-style: none;
+}
+
+header > section#above > ul summary::marker {
+  content: "";
+}
+
+header > section#above > ul > li:first-of-type > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: red;
+  font-weight: 700;
+}
+
+header > section#above > ul > li:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 10%;
+}
+
+header > section#above > ul > li:nth-of-type(2) img {
+  width: 15%;
+}
+
+header > section#above > ul > li:last-of-type > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header > section#above > ul > li:last-of-type > a > span {
+  /* text-decoration: underline; */
+  border-bottom: 1px black solid;
+}
+
+header > section#above > ul a {
+  text-decoration: none;
+  color: #000000;
+}
+
+header > section:last-of-type {
+  justify-content: center;
+  height: 100px;
+}
+
+header > section:last-of-type::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 20px;
+  width: 100%;
+  left: 0;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/23618/rip.svg)
+    bottom;
+  background-size: 40%;
+}
+
+header > section:last-of-type > nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem 0 4rem;
+}
+
+header > section:last-of-type ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  height: 100%;
+}
+
+header > section:last-of-type ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  height: 100%;
+}
+
+header > section:last-of-type ul > li:first-of-type {
+  width: 15%;
+}
+
+header > section:last-of-type ul > li:first-of-type a > img {
+  width: 100%;
+}
+
+header > section:last-of-type ul > li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+header > section:last-of-type ul li:nth-last-of-type(2) a {
+  background-color: red;
+  color: white;
+  padding: 0.5rem;
+}
+
+header > section:last-of-type ul > li:last-of-type > img {
+  width: 70%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#bg {
+  background-image: url(bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#landing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 80%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+#landing > div {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 20rem;
+}
+
+#landing > div > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 20%;
+  height: fit-content;
+  color: #ffffff;
+  background-color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+#landing > div > a img:last-of-type {
+  transform: rotateY(180deg);
+}
+
+#landing > p > img {
+  position: absolute;
+  transform: rotate(-5deg);
+  bottom: -150px;
+  left: 200px;
+  width: 500px;
+}
+
+#landing > p::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 80%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+#counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  text-align: center;
+}
+
+#counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 450px;
+  height: fit-content;
+  color: #ffffff;
+  background-color: #1f1f1f;
+  padding: 0 1rem;
+  border-radius: 1.5rem;
+}
+
+#counter > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  /* border: 1px purple solid; */
+  padding: 1rem;
+  background: #1f1f1f;
+}
+
+#counter > span:first-of-type {
+  padding-left: 1rem;
+}
+#counter > span:last-of-type {
+  padding-right: 1rem;
+}
+
+#counter > .separator {
+  background-color: #ffffff;
+  height: 90px;
+  width: 1px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+#part-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("textura-blanca\ 1.png");
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 140vh;
+}
+
+#part-2 > p {
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0;
+  color: red;
+  border: 1px red solid;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+#part-2 > h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#part-2 > #line {
+  position: absolute;
+  top: 206px;
+  width: 1px;
+  height: 580px;
+  background-color: gray;
+  margin: 2rem 0;
+  z-index: 0;
+}
+
+#part-2 > div {
+  position: absolute;
+  top: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+#part-2 .actions {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 700;
+  font-size: 1.3rem;
+  width: 60%;
+}
+
+#part-2 .actions p {
+  width: 44.5%;
+  margin: 0;
+  margin-top: -6px;
+}
+
+#part-2 .actions:nth-of-type(odd) {
+  justify-content: flex-end;
+}
+
+#part-2 .actions:nth-of-type(even) p {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+#part-2 .actions:nth-of-type(odd) p {
+  padding-left: 2rem;
+}
+
+#section-separator {
+  position: relative;
+  width: 100%;
+}
+
+#section-separator img:first-of-type {
+  width: 100%;
+  position: absolute;
+  top: -200px;
+}
+
+#section-separator img:nth-of-type(2) {
+  position: absolute;
+  width: 40%;
+  top: -60px;
+  left: 100px;
+}
+
+#section-separator > div {
+  position: absolute;
+  color: white;
+  right: 50px;
+  top: 100px;
+  width: 40%;
+}
+
+#section-separator > div span {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#part-3 {
+  width: 100%;
+  height: 120vh;
+  background: url("bg-part-3.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 200px;
+}
+
+#part-3 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 500px;
+  text-align: center;
+}
+
+#part-3 > div > img {
+  width: 200px;
+}
+
+#part-3 > div > h2 {
+  color: white;
+  font-weight: bolder;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+#part-3 > div > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  color: #ffffff;
+  background-color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+#part-3 > div > a img:last-of-type {
+  transform: rotateY(180deg);
+}
+
+#part-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#part-4 > h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#part-4 > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 150px;
+  padding: 0 5rem;
+}
+
+#part-4 > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#part-4 > div:first-of-type {
+  margin-top: -100px;
+}
+
+#part-4 > div > div > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 35%;
+  height: fit-content;
+  color: #ffffff;
+  background-color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin: -80px 0 20px 0;
+}
+
+#part-4 > div > div #joining-line{
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    width: 1px;
+    height: 685px;
+    background-color: red;
+}
+
+#part-4 > div > div > a img {
+  width: 20px;
+}
+
+#part-4 > div > div > a img:last-of-type {
+  transform: rotateY(180deg);
+}
+
+#part-4 > div > div > div .bullet-point {
+  padding: 0.5rem;
+  background-color: red;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+#part-4 > div > div > div > img {
+  width: 50px;
+}
+
+#part-4 > div > div > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+}
